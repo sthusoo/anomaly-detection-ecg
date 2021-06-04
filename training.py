@@ -1,11 +1,6 @@
 import pandas as pd
-import matplotlib as mlp
-import matplotlib.pyplot as plt
-import tensorflow as tf
-from tensorflow.keras.models import Model
-import numpy as np
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import MinMaxScaler, StandardScaler
+from sklearn.preprocessing import MinMaxScaler
 import model
 
 df = pd.read_csv('ECG5000/ecg_data.txt', sep='  ', header=None)
@@ -25,7 +20,7 @@ normal_test_data = pd.DataFrame(scaled_test_data).add_prefix("column_").query('c
 anomaly_test_data = pd.DataFrame(scaled_test_data).add_prefix("column_").query('column_0 > 0').values[:, 1:]
 
 my_model = model.Autoencoder()
-early_stopping = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=2,mode='min')
+# early_stopping = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=2,mode='min')
 
 my_model.compile(optimizer='adam', loss='mae')
 history = my_model.fit(normal_train_data, normal_train_data, 
