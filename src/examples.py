@@ -1,10 +1,9 @@
 import streamlit as st
 
 import matplotlib.pyplot as plt
-import numpy as np
 
-import variables as v
-import training as tr
+import src.variables as v
+import src.training as tr
 
 
 def example_1():

@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
-import model
+import src.model as model
 
 df = pd.read_csv('ECG5000/ecg_data.txt', sep='  ', header=None)
 df = df.add_prefix('column_')

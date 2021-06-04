@@ -1,6 +1,6 @@
 import tensorflow as tf
 import numpy as np
-import training as tr
+import src.training as tr
 
 model = tf.keras.models.load_model('autoencoder_model')
 # Normal

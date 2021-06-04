@@ -4,10 +4,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-import variables as v
-import training as tr
-import markdown as md
-import examples as ex
+import src.variables as v
+import src.training as tr
+import src.markdown as md
+import src.examples as ex
 
 def main():
     st.set_option('deprecation.showPyplotGlobalUse', False)
@@ -20,7 +20,8 @@ def main():
     col1, col2, col3 = st.beta_columns([3,.5,3])
     col2.markdown(md.image, unsafe_allow_html=True)
 
-    st.title('Anomaly Detection in ECG Data')
+    col1, title_col, col3 = st.beta_columns([1.2,2,1.2])
+    title_col.title('Anomaly Detection in ECG Data')
 
     # Dataset
     st.markdown("## The ECG Dataset")
@@ -40,9 +41,9 @@ def main():
     col1, col2, col3, col4, col5 = st.beta_columns([0.1, 1, 0.2, 1, 0.1])
     # Normal
     with col2:
-        st.subheader('Normal Data vs. Decoder Output')
+        st.subheader('Normal Data vs. Reconstructed Data')
         plt.plot(tr.normal_test_data[1], '#7193ff', label='Normal')
-        plt.plot(v.decoder_out[1], '#ff6666', label='Decoder')
+        plt.plot(v.decoder_out[1], '#ff6666', label='Reconstructed')
         plt.legend(loc='upper right')
         st.pyplot()
 
@@ -51,9 +52,9 @@ def main():
             st.write(md.normal_explain)
     # Anamoly
     with col4:
-        st.subheader('Anomaly Data vs. Decoder Output')
+        st.subheader('Anomaly Data vs. Reconstructed Data')
         plt.plot(tr.anomaly_test_data[1], '#7193ff', label='Anomaly')
-        plt.plot(v.decoder_out_a[1], '#ff6666', label='Decoder')
+        plt.plot(v.decoder_out_a[1], '#ff6666', label='Reconstructed')
         plt.legend(loc='upper right')
         st.pyplot()
 
