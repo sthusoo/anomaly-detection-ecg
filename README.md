@@ -2,9 +2,9 @@
 With every heart beat, an electrical impulse travels through the heart which causes it to pump blood from and to the muscle. An Electrocardiogram or ECG is a test that measures and records this electrical activity. The medical test is used detect cardiac abnormalities in patients such as heart disease, abnormal heart rhythms, or an enlarged heart. 
 
 ## Project Overview
-The purpose of this project is to use an unsupervised learning technique, specificially autoencoders, to detect anomalities in ECG data. You can find more information about the dataset and the model archiecture on the site linked below. After reading, you can try to detect anomalies yourself and see how you perform compared to the model and the ground truth
+The purpose of this project is to use an unsupervised learning technique, specifically autoencoders, to detect anomalies in ECG data. You can find more information about the dataset and the model archiecture on the site linked below. After reading, you can try to detect anomalies yourself and see how you perform compared to the model and the ground truth
 
-👉🏼 [Visit the Site]() 
+👉🏼 [Visit the Site]()
 
 ## Autoencoders
 An autoencoder is a type of artificial neural network used to learn efficient data codings in an unsupervised manner. It works by compressing input data to create a latent-space representation, and then reconstructing the data from this representation to create the output. It consists of two components - an encoder and a decoder. The encoder first learns a mapping from the data to a lower-dimensional latent space, and the decoder then learns a mapping from the latent space back to the original higher-dimensional space. **It is important to note that the model is only trained on normal data.** This makes it learn in an unsupervised manner by minimizing the error between the original data and the reconstructed data.
