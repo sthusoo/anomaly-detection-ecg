@@ -27,13 +27,13 @@ def main():
     st.markdown("## The ECG Dataset")
     dataset_expander = st.beta_expander("Read more")
     with dataset_expander:
-        st.write(md.dataset)
+        st.markdown(md.dataset)
 
     # Model
     st.markdown("## The Model")
     model_expander = st.beta_expander("Read more")
     with model_expander:
-        st.write(md.model)
+        st.markdown(md.model)
         col1, col2, col3 = st.beta_columns([1,2,1])
         col2.image('assets/autoencoder.png', caption='Autoencoder Architecture')
 
@@ -49,7 +49,7 @@ def main():
 
         explanation = st.beta_expander("Explanation")
         with explanation:
-            st.write(md.normal_explain)
+            st.markdown(md.normal_explain)
     # Anamoly
     with col4:
         st.subheader('Anomaly Data vs. Reconstructed Data')
@@ -60,7 +60,7 @@ def main():
 
         explanation = st.beta_expander("Explanation")
         with explanation:
-            st.write(md.anomaly_explain)
+            st.markdown(md.anomaly_explain)
 
     st.markdown("## Predicting Normal vs. Anomaly ECG Data")
     st.write(md.predictions_text)
