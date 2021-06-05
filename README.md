@@ -2,7 +2,7 @@
 With every heart beat, an electrical impulse travels through the heart which causes it to pump blood from and to the muscle. An Electrocardiogram or ECG is a test that measures and records this electrical activity. The medical test is used detect cardiac abnormalities in patients such as heart disease, abnormal heart rhythms, or an enlarged heart. 
 
 ## Project Overview
-The purpose of this project is to use an unsupervised learning technique, specifically autoencoders, to detect anomalies in ECG data. You can find more information about the dataset and the model archiecture on the site linked below. After reading, you can try to detect anomalies yourself and see how you perform compared to the model and the ground truth
+The purpose of this project is to use an unsupervised learning technique, specifically autoencoders, to detect anomalies in ECG data. You can find more information about the dataset and the model archiecture on the site linked below. After reading, you can try to detect anomalies yourself and see how you perform against the model and the ground truth!
 
 👉🏼 [Visit the Site]()
 
