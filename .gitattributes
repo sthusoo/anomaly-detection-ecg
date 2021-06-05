@@ -1,4 +1,4 @@
 *.ts linguist-detectable=false
 *.arff linguist-detectable=false
-*.txt linguist-detectable=false
+*.pb linguist-detectable=false
 *.py linguist-detectable=true
