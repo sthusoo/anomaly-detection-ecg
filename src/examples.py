@@ -83,7 +83,7 @@ def example_2():
 def example_3():
     ccol1, ccol2, ccol3, ccol4, ccol5 = st.beta_columns([2, 0.2, 1.5, 0.3, 1])
     with ccol1:
-        plt.plot(tr.anomaly_test_data[20], '#7193ff')
+        plt.plot(tr.anomaly_test_data[6], '#7193ff')
         st.pyplot()
 
     with ccol3:
