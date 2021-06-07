@@ -30,7 +30,7 @@ predictions_text = """The graphs above help to display the differences between h
 
 threshold = """The graph to the right shows the clear separation betweent the reconstruction loss 
         for the normal (green) data and the anomaly (purple) data by the threshold (orange line). Some of the normal and anomaly data crosses past the threshold value - 
-        this would be classified as false positives/negatives. For the most part, the threshold does a good job of separating the data."""
+        these would be classified as false positives/negatives. For the most part, the threshold does a good job of separating the data."""
 
 evaluation = """Below, you can see how the model performs on data it has not seen before - both normal and abnormal ECGs. From the table, 
     it seems to have a high accuracy score on both the normal and anomaly data."""
